@@ -9,8 +9,8 @@ def blink(_pin):
     time.sleep(0.5)
 
 pin = 2
-wp.wiringpisetup()
-wp.pinmode(pin, 1)
+wp.wiringPiSetup()
+wp.pinMode(pin, 1)
 
 for i  in range(0, 10):
     blink(pin)
